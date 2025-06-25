@@ -38,12 +38,12 @@ public class Main {
         return result;
     }
 
-    public static int getSum (List<Integer> res) {
-        int result = 0;
-        for (Integer re : res) {
-            result += re;
+    public static int getSum(List<Integer> numbers) {
+        int sum = 0;
+        for (Integer number : numbers) {
+            sum += number;
         }
-        return result;
+        return sum;
     }
 
 
