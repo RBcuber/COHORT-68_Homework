@@ -1,7 +1,7 @@
 package app;
 
 public class Bus extends Vehicle{
-    int numberOfPassengers;
+    private int numberOfPassengers;
 
     public Bus(String number, String brand, int year, int numberOfPassengers) {
         super(number, brand, year);
