@@ -9,7 +9,7 @@ public class Main {
         String joined = MyUtils.join(names);
         System.out.println(joined);
 
-        MyUtils.removeShortStrings(names);
+        MyUtils.removeShortStrings(names, 3);
         System.out.println(names);
 
 

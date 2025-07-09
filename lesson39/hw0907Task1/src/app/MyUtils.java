@@ -17,10 +17,10 @@ public class MyUtils {
         return result;
     }
 
-    public static void removeShortStrings(List<String> list) {
+    public static void removeShortStrings(List<String> list, int minLength) {
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()) {
-            if (iterator.next().length() < 3) {
+            if (iterator.next().length() < minLength) {
                 iterator.remove();
             }
         }
