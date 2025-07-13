@@ -25,25 +25,25 @@ public class Main {
 
         int choice = scanner.nextInt();
 
-        Comparator<Product> ComparatorByPriceAsc = new Comparator<Product>() {
+        Comparator<Product> comparatorByPriceAsc = new Comparator<Product>() {
             @Override
             public int compare(Product p1, Product p2) {
                 return Double.compare(p1.price, p2.price);
             }
         };
-        Comparator<Product> ComparatorByPriceDesc = new Comparator<Product>() {
+        Comparator<Product> comparatorByPriceDesc = new Comparator<Product>() {
             @Override
             public int compare(Product p1, Product p2) {
                 return Double.compare(p2.price, p1.price);
             }
         };
-        Comparator<Product> ComparatorByRating = new Comparator<Product>() {
+        Comparator<Product> comparatorByRating = new Comparator<Product>() {
             @Override
             public int compare(Product p1, Product p2) {
                 return Double.compare(p2.rating, p1.rating);
             }
         };
-        Comparator<Product> ComparatorByStock = new Comparator<Product>() {
+        Comparator<Product> comparatorByStock = new Comparator<Product>() {
             @Override
             public int compare(Product p1, Product p2) {
                 return Integer.compare(p2.stock, p1.stock);
@@ -51,16 +51,16 @@ public class Main {
         };
         switch (choice) {
             case 1:
-                Collections.sort(products, ComparatorByPriceAsc);
+                Collections.sort(products, comparatorByPriceAsc);
                 break;
             case 2:
-                Collections.sort(products, ComparatorByPriceDesc);
+                Collections.sort(products, comparatorByPriceDesc);
                 break;
             case 3:
-                Collections.sort(products, ComparatorByRating);
+                Collections.sort(products, comparatorByRating);
                 break;
             case 4:
-                Collections.sort(products,ComparatorByStock);
+                Collections.sort(products, comparatorByStock);
                 break;
             default:
                 System.out.println("Неверный выбор");

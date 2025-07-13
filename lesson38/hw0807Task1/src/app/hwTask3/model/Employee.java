@@ -1,4 +1,4 @@
-package app.Model;
+package app.hwTask3.model;
 
 public abstract class Employee {
     private String name;

@@ -1,6 +1,6 @@
 package app;
 
-import app.Model.*;
+import app.hwTask3.model.*;
 
 public class Main {
     public static void main(String[] args) {

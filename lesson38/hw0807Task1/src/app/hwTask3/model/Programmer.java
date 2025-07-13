@@ -1,4 +1,4 @@
-package app.Model;
+package app.hwTask3.model;
 
 public class Programmer extends Employee{
 
