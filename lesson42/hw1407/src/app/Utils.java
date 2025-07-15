@@ -1,5 +1,6 @@
 package app;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +25,7 @@ public class Utils {
     }
 
     public static Map<String, Boolean> uniqueString(List<String> list) {
-        Map<String, Boolean> map = new LinkedHashMap<>();
+        Map<String, Boolean> map = new HashMap<>();
 
         for (String name : list) {
             map.put(name, !map.containsKey(name));
