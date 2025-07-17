@@ -37,6 +37,6 @@ public class Main {
         Utils.printString(addresses);
         System.out.println();
 
-
+        List<Person> s = people.stream().filter(p -> p.getlName().length()>5).toList();
     }
 }
