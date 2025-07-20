@@ -1,9 +1,5 @@
 package app;
 
-import app.model.DHL;
-import app.model.Email;
-import app.model.Pigeon;
-
 import java.util.Scanner;
 
 public class Main {

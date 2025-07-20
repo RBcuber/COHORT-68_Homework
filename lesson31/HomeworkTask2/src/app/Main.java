@@ -1,10 +1,5 @@
 package app;
 
-import app.model.Bush;
-import app.model.Flower;
-import app.model.Plant;
-import app.model.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
 

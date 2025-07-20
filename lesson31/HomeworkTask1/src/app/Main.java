@@ -1,10 +1,5 @@
 package app;
 
-import app.model.Figure;
-import app.model.Circle;
-import app.model.Rectangle;
-import app.model.Square;
-
 import java.util.ArrayList;
 import java.util.List;
 

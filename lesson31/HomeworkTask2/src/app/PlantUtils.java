@@ -1,8 +1,6 @@
 package app;
 
 
-import app.model.Plant;
-
 import java.util.List;
 
 public class PlantUtils {

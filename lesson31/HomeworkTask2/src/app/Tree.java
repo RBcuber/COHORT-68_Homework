@@ -1,4 +1,4 @@
-package app.model;
+package app;
 
 public class Tree extends Plant {
     private int springMin = 10;

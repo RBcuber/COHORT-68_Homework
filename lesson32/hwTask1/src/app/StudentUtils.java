@@ -1,7 +1,5 @@
 package app;
 
-import app.model.Student;
-
 import java.util.List;
 
 public class StudentUtils {

@@ -1,4 +1,4 @@
-package app.model;
+package app;
 
 public class Circle extends Figure {
     private double radius;

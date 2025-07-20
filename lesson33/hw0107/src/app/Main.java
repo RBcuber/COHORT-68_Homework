@@ -1,7 +1,5 @@
 package app;
 
-import app.model.Book;
-
 import java.util.ArrayList;
 
 public class Main {

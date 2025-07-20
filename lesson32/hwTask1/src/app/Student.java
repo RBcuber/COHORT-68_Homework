@@ -1,4 +1,4 @@
-package app.model;
+package app;
 
 public class Student {
     private static int counter = 0;

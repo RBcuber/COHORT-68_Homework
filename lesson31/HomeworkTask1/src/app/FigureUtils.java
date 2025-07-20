@@ -1,7 +1,5 @@
 package app;
 
-import app.model.Figure;
-
 import java.util.ArrayList;
 import java.util.List;
 
