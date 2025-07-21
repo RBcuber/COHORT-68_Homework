@@ -16,16 +16,12 @@ public class Main {
                 "Pear", "Plum", "Peach", "Peach", "Kiwi", "Banana", "Grape"
         );
 
-        Map<String, Boolean> result = fruits.stream()
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet().stream()
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        entry -> entry.getValue() > 1
-                ));
+        Map<String,Boolean> result = fruits.stream()
+                .collect(Collectors.toMap(s->s,s->false, (oldValue,newValue)->true));
+
         System.out.println("Дан лист строк, нужно получить Map<String, Boolean>, где ключ - строка, значение - true, если строка встретилась более одного раза, иначе false Естественно, решить используя Stream.");
         System.out.println("\nРезультат:");
-        result.forEach((k, v) -> System.out.println(k + " : " + v));
+        result.forEach((k,v) -> System.out.println(k + " : " + v));
 
     }
 }
