@@ -1,13 +1,10 @@
 package app;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String str1 = "({[]})";
+        String str1 = "()(((";
         String str2 = "{} {{gsdgghs{{} }}gj{[][  ][hg{} [[fg{sg]g]  ]]] {{ g]]  dd(g(((  ) ))()(()gsd() ())){asd}gsd} { )() ()))g(((} ";
         String str3 = "[d{ddfghgj (d)sassd g ajsd}d([j fgadasdd asd] asd){d}]";
         String str4 = "}[d{ddfghgj (d)sassd g ajsd}d([j fgadasdd asd] asd){d}]";
@@ -30,8 +27,7 @@ public class Main {
     }
 
     private static boolean isValid(String str) {
-        List<Character> list = new ArrayList<>();
-
+        LinkedList<Character> list = new LinkedList<>();
         for (int i = 0; i < str.length(); i++) {
             boolean openBrackets = str.charAt(i) == '{' || str.charAt(i) == '[' || str.charAt(i) == '(';
             boolean closeBrackets = str.charAt(i) == '}' || str.charAt(i) == ']' || str.charAt(i) == ')';
@@ -48,7 +44,7 @@ public class Main {
                 list.remove(list.size() - 1);
             }
         }
-        return true;
+        return list.isEmpty();
     }
 
     private static boolean isValidMap(String str) {
@@ -70,7 +66,7 @@ public class Main {
                 list.remove(list.size() - 1);
             }
         }
-        return true;
+        return list.isEmpty();
     }
 
 
