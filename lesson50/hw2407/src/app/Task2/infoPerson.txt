@@ -1,0 +1,17 @@
+jack,32,jack@mail.com
+john,21,@john@mail.com
+ann,5,ann@mail.com
+lena,1w7,lena@mail.com
+lena,17
+mike,99,mike@mail.com
+julia,15,julia.mail.com
+tim,-2,tim@site.com
+elena,28,elena@@mail.com
+bob,abc,bob@mail.com
+max,33,max@mail.com
+sara,22,sara@mail
+ivan,18,ivan@mail.com
+olga,105,olga@mail.com
+dima,30,dima@mail.com
+jack,32,jack@mail.com
+ivan,18,ivan@mail.com
